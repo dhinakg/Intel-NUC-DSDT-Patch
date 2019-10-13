@@ -40,14 +40,16 @@
                         "UsbConnector", 3,
                         "port", Buffer() { 0x05, 0, 0, 0 },
                     },
-                    #if 0
                     "HS06", Package()   // internal header 2
                     {
-                        "UsbConnector", 255, // use 0 if connected to port on non-Intel case
+                        "UsbConnector", 0, // use 0 if connected to port on non-Intel case
                         "port", Buffer() { 0x06, 0, 0, 0 },
                     },
-                    #endif
-                    //HS07 not used
+                    "HS07", Package()   // internal header 2
+                    {
+                        "UsbConnector", 0, // use 0 if connected to port on non-Intel case
+                        "port", Buffer() { 0x06, 0, 0, 0 },
+                    },
                     "HS08", Package() // bluetooth
                     {
                         "UsbConnector", 255,

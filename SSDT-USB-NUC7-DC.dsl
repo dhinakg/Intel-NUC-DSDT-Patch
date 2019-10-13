@@ -48,7 +48,7 @@
                     "HS07", Package()   // internal header 2
                     {
                         "UsbConnector", 0, // use 0 if connected to port on non-Intel case
-                        "port", Buffer() { 0x06, 0, 0, 0 },
+                        "port", Buffer() { 0x07, 0, 0, 0 },
                     },
                     "HS08", Package() // bluetooth
                     {
